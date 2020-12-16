@@ -1,6 +1,6 @@
 {
-    "name": "videos_advertiser",
-    "short_name": "videos_advertiser",
+    "name": "beta_clone_control_panel",
+    "short_name": "beta_clone_control_panel",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
