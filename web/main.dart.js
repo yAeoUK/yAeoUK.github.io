@@ -15393,7 +15393,7 @@ this.b=b},
 rB:function rB(a,b,c){this.f=a
 this.b=b
 this.a=c},
-arg:function(a,b){return G.a7m(new G.a83(a,null,b,null),t.eT)},
+arg:function(a,b,c){return G.a7m(new G.a83(a,c,b,null),t.eT)},
 a7m:function(a,b){return G.aq3(a,b,b.j("0*"))},
 aq3:function(a,b,c){var s=0,r=P.aj(c),q,p=2,o,n=[],m,l
 var $async$a7m=P.af(function(d,e){if(d===1){o=e
@@ -32518,8 +32518,9 @@ j=n.b
 j.m(0,"deviceInfo","admin")
 i=n.c
 T.arm(i)
+h=t.X
 s=6
-return P.ar(G.arg("http://betaclone.atwebpages.com/"+n.a,j),$async$o0)
+return P.ar(G.arg("http://betaclone.atwebpages.com/"+n.a,j,P.ax(["Accept","application/json","Access-Control-Allow-Origin","*"],h,h)),$async$o0)
 case 6:f=b
 K.a9m(i)
 if(f.b===200){j=f
@@ -32536,8 +32537,8 @@ j=H.a2(e)
 if(t.bT.b(j)){j=n.c
 i=L.cf(j,C.ap,t.r)
 i=i.grW(i)
-g=f
-T.a89(i,B.aaF(U.aag(g.e).c.a.h(0,"charset")).ck(0,g.x),j)}else{l=j
+h=f
+T.a89(i,B.aaF(U.aag(h.e).c.a.h(0,"charset")).ck(0,h.x),j)}else{l=j
 k=t.zd.a(l)
 j=n.c
 K.a9m(j)
@@ -57649,20 +57650,22 @@ return a.qK("POST",s.a,s.b,s.c,s.d)},
 $S:335}
 E.yN.prototype={
 qK:function(a,b,c,d,e){return this.Vc(a,b,c,d,e)},
-Vc:function(a,b,c,d,e){var s=0,r=P.aj(t.eT),q,p=this,o,n,m,l
+Vc:function(a,b,c,d,e){var s=0,r=P.aj(t.eT),q,p=this,o,n,m,l,k
 var $async$qK=P.af(function(f,g){if(f===1)return P.ag(g,r)
-while(true)switch(s){case 0:n=P.vk(b)
-m=O.amt(a,n)
-n=t.X
-n=d.fd(d,n,n)
-o=m.gmX()
-if(o==null)m.r.m(0,"content-type",R.EL("application","x-www-form-urlencoded",null).i(0))
-else if(o.a+"/"+o.b!=="application/x-www-form-urlencoded")H.i(P.X('Cannot set the body fields of a Request with content-type "'+o.ga_Q(o)+'".'))
-m.sX4(0,B.ara(n,m.grT(m)))
-l=U
+while(true)switch(s){case 0:m=P.vk(b)
+l=O.amt(a,m)
+m=l.r
+m.W(0,c)
+o=t.X
+o=d.fd(d,o,o)
+n=l.gmX()
+if(n==null)m.m(0,"content-type",R.EL("application","x-www-form-urlencoded",null).i(0))
+else if(n.a+"/"+n.b!=="application/x-www-form-urlencoded")H.i(P.X('Cannot set the body fields of a Request with content-type "'+n.ga_Q(n)+'".'))
+l.sX4(0,B.ara(o,l.grT(l)))
+k=U
 s=3
-return P.ar(p.ex(0,m),$async$qK)
-case 3:q=l.Y5(g)
+return P.ar(p.ex(0,l),$async$qK)
+case 3:q=k.Y5(g)
 s=1
 break
 case 1:return P.ah(q,r)}})
