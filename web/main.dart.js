@@ -32520,7 +32520,7 @@ i=n.c
 T.arm(i)
 h=t.X
 s=6
-return P.ar(G.arg("http://betaclone.atwebpages.com/"+n.a,j,P.ax(["Accept","application/json","Access-Control-Allow-Origin","*"],h,h)),$async$o0)
+return P.ar(G.arg("http://betaclone.atwebpages.com/"+n.a,j,P.ax(["Access-Control-Allow-Origin","*","Access-Control-Allow-Credentials","true","Access-Control-Allow-Headers","Origin,Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token","Access-Control-Allow-Methods","POST, OPTIONS"],h,h)),$async$o0)
 case 6:f=b
 K.a9m(i)
 if(f.b===200){j=f
